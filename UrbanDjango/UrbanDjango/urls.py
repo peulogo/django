@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from task2.views import functional_view, ClassBasedView
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('functional/', functional_view, name='functional_view'),
+    path('class/', ClassBasedView.as_view(), name='class_view'),
 ]
