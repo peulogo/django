@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+<h1>Игры</h1>
+    <ul>
+        {% for item in menu_items %}
+        <li>
+            {{ item.name }} <button style="display: inline">Купить</button>
+        </li>
+        {% endfor %}
+    </ul>
+
+<a href="{% url 'main_view' %}"
+style="
+  display: inline-block;
+  padding: 10px 15px;
+  background: #f2f2f2;
+  border: 1px solid #000;
+  color: #333;
+  text-decoration: none;
+  text-align: center;"
+>Вернуться обратно</a></body>
+</html>
