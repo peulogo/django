@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <ul>
+        <li>
+            <a href="{% url 'main_view' %}">Главная</a>
+        </li>
+        <li>
+            <a href="{% url 'games_view' %}">Магазин</a>
+        </li>
+        <li>
+            <a href="{% url 'cart_view' %}">Корзина</a>
+        </li>
+    </ul>
+</body>
+</html>
